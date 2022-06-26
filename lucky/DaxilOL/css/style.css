@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300&family=Nunito:wght@300;400;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;1,500&family=Poppins:wght@400;500&family=Sora:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   list-style: none;
+   font-family: 'Nunito', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+:root {
+    --main-color:  #FF8900;
+    --text-color: #3E3737;
+  }
+  .form-control{
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  /* ***** Scroll ****** */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #106853; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #106853; 
+}
+  /* ********* NavBar ********* */
+.nav-header{
+    position: relative;
+   background-color:var(--main-color); 
+}
+.shopping-cart i{
+  color: #fff;
+  font-size: 30px;
+}
+.nav-btn{
+    padding: 20px;
+}
+.nav-search{
+    padding: 20px;
+}
+.header-bg{
+    position:absolute;
+    right: 0;
+    width: 50%;
+    z-index: 3;
+}
+.header-btn1{
+   border: 1px solid #fff; 
+   color:  #fff !important;
+}
+.header-btn2{
+    background-color: #fff;
+    color:  var(--text-color);
+ }
+ .nav-form .form-control{
+  color: #fff;
+ padding: 10px;
+ background-color:var(--main-color) ;
+ border: 1px solid #f8f8f8;
+ font-size: 1.8rem;
+ box-shadow: none !important;
+ outline: none !important;
+}
+ .navbar-brand{
+     background-color: rgb(38, 121, 80);
+     color: #fff !important;
+     width: 500px;
+     height: 80px;
+     text-align: center;
+ }
+ .nav-link{
+     font-size: 20px;
+     color: #fff !important;
+ }
+ .navbar{
+     background-color: var(--main-color) !important;    
+ }
+ .navbar{
+    padding: 0 !important;
+ }
+ .fa-list-tree{
+     font-size: 20px;
+     color: white;
+ }
+
+/* ********* Sifre Yenile ********* */
+.register{
+  background: var(--main-color);
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.register-left{
+ display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-bottom: 10px;
+}
+.register-left img{
+  width: 40%;
+  margin-bottom: 15px;
+ }
+ .register-left a{
+   background-color: #fff;
+   color: #000;
+   width:150px ;
+   margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300;
+ }
+
+.register-right{
+margin-right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background:#fff ;
+border-top-left-radius: 20% 50%;
+border-bottom-left-radius: 20% 50%;
+padding: 0;
+box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 10%);
+}
+.register-form{
+padding: 60px;
+font-size: 15px;
+}
+.form-floating{
+  border: 1px solid rgb(190, 184, 184);
+ 
+}
+.btn-general{
+  background-color: var(--main-color);
+  color: #fff;
+  width:150px ;
+  margin-top: 10px;
+ padding: 10px;
+ font-size: 18px;
+ font-weight: 300;
+}
+.btn-general:hover{
+    background-color: #106853;
+    color: white;
+  }
+  .password-link {
+    color: rgb(110, 109, 109);
+  }
+  .password-link:hover {
+    color: var(--main-color);
+  }
+.form-box{
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+ 
+/* ********* Footer ********* */
+.logo-footer i{
+    padding: 10px 5px;
+    color:#106853 ;
+    font-size: 25px;
+  }
+  .logo-footer i:hover{
+    color:var(--main-color) ;
+  
+  }
+  .footer-list a{
+    color: var(--text-color);
+  }
+  .footer-list a:hover{
+    color: var(--main-color);
+  }
+  .footer-list-top{
+    color: var(--main-color);
+    font-size: 18px;
+  }
+  .footer-list-top:hover{
+    color: #f97901;
+  }
+  .icon-top-right{
+    right: 0;
+  }
+  .icon-top{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+    color: var(--main-color);
+  }
+  .copyright{
+      padding: 10px;
+  }

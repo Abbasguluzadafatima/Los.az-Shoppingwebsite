@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lucky</title>
+</head>
+<body>
+    <!-- -------- NavBar -------- -->
+    <header class="nav-header">
+        <img class="header-bg"  src="./public/images/pattern/leaf-header-1.png" alt="#">
+        <nav class="nav-btn">
+            <div class="container">
+                <div class="row">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn header-btn1 me-md-2" type="button">Daxil ol</button>
+                        <button class="btn header-btn2 " type="button">Qeydiyyat</button>
+                      </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-search">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center ">
+                    <div class="col-auto">
+                        <img class="header-img" src="./public/images/logo/logo-header.svg" alt="#">
+                    </div>
+                    <div class="col-auto">
+                        <div class="input-group nav-form mb-3">
+                            <input type="text" class="form-control" placeholder="Axtar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          </div>
+                    </div>
+                    <!-- ------- Shopping Cart ------- -->
+                    <div class="col-auto shopping-cart position-relative ">
+                      <button type="button" class="btn btn-cart position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="item-count" class="position-absolute  start-400 translate-middle badge rounded-pill bg-danger mt-2">0</span>
+                      </button>
+                      <i class=" fa-solid fa-heart"></i>
+                      <span  class="position-absolute  start-400 translate-middle badge rounded-pill bg-danger mt-2">0</span> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- <div class="container"> -->
+              <a class="navbar-brand  active" href="#">Kateqoriyalar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav p-3 ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Haqqimizda/haqqimizda.html">Haqqımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Yeni/Yeni.html">Yeni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Mehsul/Mehsul.html">Endirimlər</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../OfisLevezimatlari/OfisLevazimatlari.html">Ləvazimatlar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Şərtlər
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Əlaqə/Elaqe.html">Əlaqə</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>   
+    </header>
+   <!-- -------- Slider -------- -->
+   <section class="slider">
+    <div class="container">
+        <div id="mainCarousel" class="carousel mb-4 w-10/12 max-w-xl mx-auto">
+            <div class="carousel__slide">
+              <div class="panzoom">
+                <img class="panzoom__content" src="./public/slider/1649834951banner-yeni-1.jpg" />
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="panzoom">
+                <img class="panzoom__content" src="./public/slider/1642066135banner3.jpg" />
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="panzoom">
+                <img class="panzoom__content" src="./public/slider/1631705963banner6-2.jpg" />
+              </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="panzoom">
+                  <img class="panzoom__content" src="./public/slider/1651820508banner14.jpg" />
+                </div>
+              </div>
+          </div>  
+       </div>
+   </section>
+      <!-- -------- Ofis Ləvazimatları -------- -->
+      <section class="products">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 intro text-center p-5">
+                <h2 class=" text-black">Ofis Ləvazimatları</h2>
+                <i class="fa-brands fa-pagelines"></i>
+           </div>
+       </div>
+          <div class="row">
+             <!-- ------ Card_1 ------ -->
+            <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+              <div class="card">
+                <div class="ofis-top d-flex align-items-center justify-content-between">
+                  <div class="ofis-text">Tövsiyə edilir</div>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="ofis-box-img">
+                  <img src="./public/Products/1636102439dwG.png" alt="#" class="card-img-top img-fluid">
+                </div>
+              <div class="card-body text-center ">
+                <h5 class="card-title">Qələm "Gigis" 9684</h5>
+                <span class="price">0.40 Azn</span>
+                <div class="d-flex align-items-center justify-content-center pt-3">
+                  <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- ------ Card_2 ------ -->
+            <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+              <div class="card">
+                <div class="ofis-top d-flex align-items-center justify-content-between">
+                  <div class="ofis-text">Tövsiyə edilir</div>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="ofis-box-img">
+                  <img src="./public/Products/1616138277a-5385_24sm_2.Jm33I.jpg" alt="#" class="card-img-top img-fluid">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Qayçı "Maped E-4682</h5>
+                <span class="price">2.00 Azn</span>
+                <div class="d-flex align-items-center justify-content-center pt-3">
+                  <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- ------ Card_3 ------ -->
+            <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+              <div class="card">
+                <div class="ofis-top d-flex align-items-center justify-content-between">
+                  <div class="ofis-text">Tövsiyə edilir</div>
+                 <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="ofis-box-img">
+                  <img src="./public/Products/1625__4065.jpg" alt="#" class="card-img-top img-fluid">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Textmarker Maped/Grosso</h5>
+                <span class="price">0.70 Azn</span>
+                <div class="d-flex align-items-center justify-content-center pt-3">
+                  <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- ------ Card_4 ------ -->
+            <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+              <div class="card">
+                <div class="ofis-top d-flex align-items-center justify-content-between">
+                  <div class="ofis-text">Tövsiyə edilir</div>
+                   <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="ofis-box-img">
+                  <img src="./public/Products/161612_səhifə_tikən_2.VKm4M.jpg" alt="#" class="card-img-top img-fluid">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Stepler "Maped" 710</h5>
+                <span class="price">4.50 Azn</span>
+                <div class="d-flex align-items-center justify-content-center pt-3">
+                  <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ <!-- -------- Bölmələr -------- -->
+ <section class="category">
+  <img class="category-imgLeft" src="./public/images/pattern/leaf-category-left-1.png" alt="#">
+ <div class="container">
+  <div class="row">
+    <div class="col-12 intro text-center p-5">
+        <h2 class=" text-white">Bölmələr</h2>
+        <i class="fa-brands fa-pagelines"></i>
+   </div>
+</div>
+   <div class="row  align-items-center justify-content-center">
+     <div class="col-xl-6 col-lg-12 col-md-12 category-box">
+       <div class="img-wrapper" >
+        <p>Kağız</p>
+        <img class="category-img"  src="./public/Banner/1618-banner 636x376.jpg" alt="#">
+       <div class="overlay"></div>
+       </div>
+    </div>
+ <div class=" col-xl-6 col-lg-6 col-md-12 col-sm-12">
+<div class="row justify-content-between ">
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 category-box">
+    <div class="img-wrapper">
+      <p class="text-wrapper">Markerlər</p>
+    <img class="category-img1" src="./public/Banner/161832-banner.jpg" alt="#">
+      <div class="overlay"></div>
+    </div>
+   </div>
+   <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 category-box">
+    <div class="img-wrapper">
+      <p class="text-wrapper">Qovluqlar</p>
+    <img class="category-img1" src="./public/Banner/16182039003-banner.jpg" alt="#">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 category-box">
+    <div class="img-wrapper">
+      <p class="text-wrapper">Kompüter aksesuarları</p>
+    <img class="category-img1" src="./public/Banner/16182048675-banner.jpg" alt="#">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 category-box">
+    <div class="img-wrapper">
+      <p class="text-wrapper">Mebel</p>
+      <img class="category-img1" src="./public/Banner/16182042684-banner.jpg" alt="#">
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+</div>
+</div>  
+   </div>
+ </div>
+ </section>  
+ <!-- -------- Qida və İçki -------- -->
+ <section class="products ">
+  <img class="bg-imgLeft" src="./public/images/pattern/leaf-office-left-1.png" alt="#">
+  <img  class="bg-imgRight"  src="./public/images/pattern/leaf-office-right-1.png" alt="#">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 intro text-center p-5">
+          <h2 class=" text-black">Qida və İçki</h2>
+          <i class="fa-brands fa-pagelines"></i>
+     </div>
+ </div>
+    <div class="row"> 
+       <!-- ------ Card_1 ------ -->
+      <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+        <div class="card">
+          <div class="ofis-top d-flex align-items-center justify-content-between">
+           <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="ofis-box-img">
+            <img src="./public/Products/16432-greentea.jpg" alt="#" class="card-img-top img-fluid">
+          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Tess "Ginger Mojito" 20ed</h5>
+          <span class="price">2.40 Azn</span>
+          <div class="d-flex align-items-center justify-content-center pt-3">
+            <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+          </div>
+        </div>
+        </div>
+      </div> 
+      <!-- ------ Card_2 ------ -->
+       <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+        <div class="card">
+          <div class="ofis-top d-flex align-items-center justify-content-between">
+           <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="ofis-box-img">
+            <img src="./public/Products/16243-adicto.png" alt="#" class="card-img-top img-fluid">
+          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Eti Adicto Intense 140qr</h5>
+          <span class="price">3.50 Azn</span>
+          <div class="d-flex align-items-center justify-content-center pt-3">
+            <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+          </div>
+        </div>
+        </div>
+      </div> 
+      <!-- ------ Card_3 ------ -->
+      <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+        <div class="card">
+          <div class="ofis-top d-flex align-items-center justify-content-between">
+           <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="ofis-box-img">
+            <img src="./public/Products/1618-qend.jpg" alt="#" class="card-img-top img-fluid">
+          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Qənd "Azərşəkər" 750qr(qutu)</h5>
+          <span class="price">2.61 Azn</span>
+          <div class="d-flex align-items-center justify-content-center pt-3">
+            <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+          </div>
+        </div>
+        </div>
+      </div> 
+      <!-- ------ Card_4 ------ -->
+       <div class="col-12 col-xl-3 col-gl-4 col-sm-6 mb-3">
+        <div class="card">
+          <div class="ofis-top d-flex align-items-center justify-content-between">
+             <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="ofis-box-img">
+            <img src="./public/Products/161612_səhifə_tikən_2.VKm4M.jpg" alt="#" class="card-img-top img-fluid">
+          </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Qehve "Mehmet Efendi" 100qr</h5>
+          <span class="price">3.41 Azn</span>
+          <div class="d-flex align-items-center justify-content-center pt-3">
+            <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- -------- Green Background -------- -->
+<section class="green-sect">
+  <img class="green-imgRight" src="./public/images/pattern/leaf-category-right-1.png" alt="#">
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-4 mb-3">
+        <a class="green-link" href="#">Qida və <br> İçkilər</a>
+          <img class="green-img" src="./public/Products/1618-drinkbanner.jpg" alt="#">
+    </div>
+    <div class="col-6 col-md-4">
+      <a class="green-link" href="#">Tibbi Ləvazimatlar</a>
+      <img class=" green-img1" src="./public/Products/1618-tibbibanner-4.jpg" alt="#">
+      <a class="green-link" href="#">Bloknotlar</a>
+        <img class="green-img1"  src="./public/Products/1618-notebooksbanner-3.jpg" alt="#">
+    </div>
+    <div class="col-6 col-md-4">
+      <a class="green-link" href="#">Təmizləyici <br> Maddələr</a>
+      <img class="green-img" class="" src="./public/Products/1618-temizlik-banner-2.jpg" alt="#">
+    </div>
+  </div>
+</div>
+</section>
+<!-- -------- Brendlerimiz -------- -->
+<section class="partners">
+<div class="container">
+  <div class="row">
+    <div class="col-12 intro text-center p-5">
+        <h2 class=" text-black">Brendlerimiz</h2>
+        <i class="fa-brands fa-pagelines"></i>
+   </div>
+</div>
+<div id="quoteCarousel" class="carousel text-lg">
+  <div class="carousel__viewport px-20">
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626254388loqo1.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626254407logo2.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626254415logo3.png" alt="#"/>
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626254422loqo4.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626332007oyal-100x100.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626338640assis-100x100.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="./public/partners/1626338672cassa-100x100.png" alt="#" />
+      </blockquote>
+    </figure>
+    <figure class="carousel__slide w-1/3">
+      <blockquote class="bg-white shadow-lg p-8 mb-8">
+        <img src="public/partners/1626338703ozokul-100x100.png" alt="#" />
+      </blockquote>
+    </figure>
+  </div>
+</div>
+</div>
+</section>
+<!-- -------- Footer -------- -->
+<footer>
+  <div class="container">
+    <div class="row">
+   <div class="col-lg-3 col-sm-12 logo-footer">
+<img src="./public/images/logo/logo-footer.svg" alt="#"><br>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram-square"></i>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+<ul>
+  <li class="footer-list-top" >Kateqoriyalar</li>
+  <li><a href="#">Ofis Ləvazimatları</a></li>
+  <li><a href="#">Qida və içkilər</a></li>
+  <li><a href="#">Təsərrüfat mallari</a></li>
+  <li><a href="#">Elektron avadanliq</a></li>
+  <li><a href="#">Dipcək gülləri</a></li>
+  <li><a href="#">Hədiyyəlik</a></li>
+  <li><a href="#">Coffee Shop</a></li>
+</ul>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+      <ul>
+        <li class="footer-list-top">Menyular</li>
+        <li><a href="#">Haqqımızda</a></li>
+        <li><a href="#">Catdırılma</a></li>
+        <li><a href="#">Geri qaytarılma və dəyişdirilmə</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+      <ul>
+        <li class="footer-list-top">Əlaqə</li>
+        <li>Tel: (+994) 99 832 07 77</li>
+        <li>E-mailI info@los.aZ</li>
+        <li>Ünvan: Ziya Bünyadov pr.1965 Çinar Park Biznes Mərkəzi</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <span class="copyright">Copyright</span>
+  <a href="#" class="position-absolute  icon-top-right p-1">
+    <i class="fa-solid fa-circle-arrow-up icon-top"></i>
+   </a>
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"> 
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

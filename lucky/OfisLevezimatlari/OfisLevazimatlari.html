@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ofis Levazimatlari</title>
+</head>
+<body>
+    <!-- -------- NavBar -------- -->
+    <header class="nav-header">
+        <img class="header-bg"  src="./public/images/pattern/leaf-header-1.png" alt="#">
+        <nav class="nav-btn">
+            <div class="container">
+                <div class="row">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn header-btn1 me-md-2" type="button">Daxil Ol</button>
+                        <button class="btn header-btn2 " type="button">Qeydiyyat</button>
+                      </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-search">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center ">
+                    <div class="col-auto">
+                        <img class="header-img" src="./public/images/logo/logo-header.svg" alt="#">
+                    </div>
+                    <div class="col-auto">
+                        <div class="input-group nav-form mb-3">
+                            <input type="text" class="form-control" placeholder="Axtar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          </div>
+                    </div>
+                    <!-- ------- Shopping Cart ------- -->
+                    <div class="col-auto shopping-cart position-relative ">
+                      <button type="button" class="btn btn-cart position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="item-count" class="position-absolute  start-400 translate-middle badge rounded-pill bg-danger mt-2">0</span>
+                      </button>
+                      <i class=" fa-solid fa-heart"></i>
+                      <span  class="position-absolute  start-400 translate-middle badge rounded-pill bg-danger mt-2">0</span> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- <div class="container"> -->
+              <a class="navbar-brand  active" href="#">Kateqoriyalar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav p-3 ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Haqqimizda/haqqimizda.html">Haqqımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Yeni/Yeni.html">Yeni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Istek/Istek.html">Endirimlər</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../OfisLevezimatlari/OfisLevazimatlari.html">Ən çox satılanlar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Şərtlər
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Əlaqə/Elaqe.html">Əlaqə</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>   
+    </header>
+      <!-- -------- Ofis Ləvazimatları -------- -->
+ <section>
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class=" intro text-center p-5">
+                <h2 class=" text-black">Ofis Ləvazimatları </h2>
+                <i class="fa-brands fa-pagelines"></i>
+           </div>
+        
+        </div>
+        <div class="col-12 col-xl-4">
+            <div class="category-slidebar">
+                <div class="category-price">
+                    <article  class="article-header" >
+                        <h2 class=" text-black">Qiymət Filterləri </h2>
+                    </article>
+                <div class="range-slider">
+                    <div class="range-container">
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                    <div class="result-container d-flex justify-content-between ">
+                        <div class="min-num">
+                            <input type="number" value="0" min="0" max="1790.00">
+                            <img src="./public/images/icon/manat.svg" alt="#">
+                        </div>
+                        <div class="max-num">
+                            <input type="number" value="500" min="0" max="1790.00">
+                            <img src="./public/images/icon/manat.svg" alt="#">
+                        </div>
+                    </div>
+                </div>
+                </div>
+               <hr>
+           <div class="sub-category-filter">
+            <article  class="article-header" >
+                <h2 class=" text-black">Alt kateqoriya</h2>
+            </article>
+            <div class="sub-category-container">
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Ağardıcı</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Bloknot</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Çərçivə</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Ağardıcı</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Dəftər</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Fayl</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Kağız</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Kalkulyator</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Karandaş</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Karandaş yonan</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Marker</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Masaüstü destləri</h3>
+                </div>
+                <div class="sub-category">
+                    <input class="form-check-input" type="checkbox" value="" >
+                    <h3>Qələm</h3>
+                </div>
+                <div class="sub-category">
+                  <input class="form-check-input" type="checkbox" value="" >
+                  <h3>Zərf</h3>
+              </div>
+              <div class="sub-category">
+                <input class="form-check-input" type="checkbox" value="" >
+                <h3>Qeyd Kağızı</h3>
+            </div>
+            <div class="sub-category">
+              <input class="form-check-input" type="checkbox" value="" >
+              <h3>Skrepka</h3>
+          </div>
+            </div>
+           </div>
+           <hr>
+           <div class="new-category-filter">
+               <div class="new-category">
+                <input class="form-check-input" type="checkbox" name="new" >
+                <h3>Yeni</h3>
+               </div>
+           </div>
+           <div class="new-category-filter">
+            <div class="new-category">
+             <input class="form-check-input" type="checkbox" name="new" >
+             <h3>Tövsiyyə edilir</h3>
+            </div>
+        </div>
+        <button class="btn btn-success">Filterlə</button>
+            </div>
+        </div>
+
+        <!-- ----- Right ------- -->
+        <div class="col-12 col-xl-8">
+            <div class="category-filter-block">
+                <div class="row p-3">
+            <div class="col-xl-6 col-12">
+          <div class="category-filter-count">
+            <span> Saya görə: </span>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>12</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+              </select>
+            </div>
+     </div>
+                    <div class="col-xl-6 col-12">
+                     <div class="category-filter-price">
+                        <span> Qiymətə görə: </span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seç</option>
+                            <option value="1">Ucuzdan Bahaya</option>
+                            <option value="2">Bahadan Ucuza</option>
+                          </select>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row  mt-3">
+                <!-- ------ Card_1 ------ -->
+               <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                    <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/1648_karandash_chernografitovyj.jpg" alt="#" class="card-img-top img-fluid">
+                   </div>
+                 <div class="card-body text-center ">
+                   <h5 class="card-title">Karandaş "Maped" M8218</h5>
+                   <span class="price">0.40 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+               <!-- ------ Card_2 ------ -->
+               <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                    <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/16476_qelem_.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Qələm "Oyal" i-067</h5>
+                   <span class="price">0.30 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+               <!-- ------ Card_3 ------ -->
+               <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                    <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/16474-duo-eraser-maped.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Pozan "Maped" M-9117</h5>
+                   <span class="price">0.30 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+               <!-- ------ Card_4 ------ -->
+               <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                      <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/16-6070_pozan.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Pozan "Assis"</h5>
+                   <span class="price">0.40 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+               
+                <!-- ------ Card_5 ------ -->
+                <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                      <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/1636___product.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Marker Lövhə "Foska"</h5>
+                   <span class="price">0.45 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+                <!-- ------ Card_6 ------ -->
+                <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                      <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/1616_markergreen.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Marker Lövhə "Mondo"</h5>
+                   <span class="price">0.60 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+                <!-- ------ Card_7 ------ -->
+                <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex justify-content-end">
+
+                      <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/1615_skrepkaOyal.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Skrepka "Oyal" i-345</h5>
+                   <span class="price">0.65 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+                <!-- ------ Card_8 ------ -->
+                <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+                 <div class="card">
+                   <div class="ofis-top d-flex  justify-content-end">
+
+                      <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="ofis-box-img">
+                     <img src="./public/Products/1641_Marker-Black.jpg" alt="#" class="card-img-top img-fluid">
+                 </div>
+                 <div class="card-body text-center">
+                   <h5 class="card-title">Marker Lövhə "Gigis"</h5>
+                   <span class="price">0.66 Azn</span>
+                   <div class="d-flex align-items-center justify-content-center pt-3">
+                     <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+                   </div>
+                 </div>
+                 </div>
+               </div>
+            <!-- ------ Card_9------ -->
+            <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+             <div class="card">
+               <div class="ofis-top d-flex  justify-content-end">
+                  <i class="fa-solid fa-heart"></i>
+               </div>
+               <div class="ofis-box-img">
+                 <img src="./public/Products/1647-metal-tekli-kalemtras.jpg" alt="#" class="card-img-top img-fluid">
+             </div>
+             <div class="card-body text-center">
+               <h5 class="card-title">Karandaş Yonan "Maped" 0198</h5>
+               <span class="price">0.68 Azn</span>
+               <div class="d-flex align-items-center justify-content-center pt-3">
+                 <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+               </div>
+             </div>
+             </div>
+            </div>
+            <!-- ------ Card_10 ------ -->
+            <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+             <div class="card">
+               <div class="ofis-top d-flex  justify-content-end">
+                  <i class="fa-solid fa-heart"></i>
+               </div>
+               <div class="ofis-box-img">
+                 <img src="./public/Products/1640_red.jpg" alt="#" class="card-img-top img-fluid">
+             </div>
+             <div class="card-body text-center">
+               <h5 class="card-title">Marker Lövhə "Atlas"</h5>
+               <span class="price">0.85 Azn</span>
+               <div class="d-flex align-items-center justify-content-center pt-3">
+                 <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+               </div>
+             </div>
+             </div>
+            </div>
+            <!-- ------ Card_11 ------ -->
+            <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+             <div class="card">
+               <div class="ofis-top d-flex  justify-content-end">
+                  <i class="fa-solid fa-heart"></i>
+               </div>
+               <div class="ofis-box-img">
+                 <img src="./public/Products/1634_salfet.jpg" alt="#" class="card-img-top img-fluid">
+             </div>
+             <div class="card-body text-center">
+               <h5 class="card-title">Salfet Z-qatlanma "Aura" 200 ədəd</h5>
+               <span class="price">1.55 Azn</span>
+               <div class="d-flex align-items-center justify-content-center pt-3">
+                 <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+               </div>
+             </div>
+             </div>
+            </div>
+            <!-- ------ Card_12 ------ -->
+            <div class="col-12 col-xl-4 col-gl-6 col-sm-12 mb-3">
+             <div class="card">
+               <div class="ofis-top d-flex justify-content-end">
+                  <i class="fa-solid fa-heart"></i>
+               </div>
+               <div class="ofis-box-img">
+                 <img src="./public/Products/1647-karandas.png" alt="#" class="card-img-top img-fluid">
+             </div>
+             <div class="card-body text-center">
+               <h5 class="card-title">Karandaş Mexanik "Maped" 0.7mm</h5>
+               <span class="price">1.60 Azn</span>
+               <div class="d-flex align-items-center justify-content-center pt-3">
+                 <a class="btn btn-outline-secondary" href="#">Səbətə at</a>
+               </div>
+             </div>
+             </div>
+            </div>
+            </div>
+            
+        </div>
+      </div>
+  </div>
+</section>
+     
+      
+      <!-- ----- Prev Next ----- -->
+      <section class="products ">
+      <div class="container">
+          <div class="row justify-content-center align-items-center">
+              <div class="col-auto">
+                  <ul class="pagination">
+                      <li class="paginations"><span><i class="fa-solid fa-arrow-left"></i></span></li>
+                      <li class="paginations"><span>1</span></li>
+                      <li class="paginations"><span>2</span></li>
+                      <li class="paginations"><span>3</span></li>
+                      <li class="paginations"><span><i class="fa-solid fa-arrow-right"></i></span></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </section>
+
+<!-- -------- Footer -------- -->
+<footer>
+  <div class="container">
+    <div class="row">
+   <div class="col-lg-3 col-sm-12 logo-footer">
+<img src="./public/images/logo/logo-footer.svg" alt="#"><br>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram-square"></i>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+<ul>
+  <li class="footer-list-top" >Kateqoriyalar</li>
+  <li><a href="#">Ofis Ləvazimatları</a></li>
+  <li><a href="#">Qida və içkilər</a></li>
+  <li><a href="#">Təsərrüfat mallari</a></li>
+  <li><a href="#">Elektron avadanliq</a></li>
+  <li><a href="#">Dipcək gülləri</a></li>
+  <li><a href="#">Hədiyyəlik</a></li>
+  <li><a href="#">Coffee Shop</a></li>
+</ul>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+      <ul>
+        <li class="footer-list-top">Menyular</li>
+        <li><a href="#">Haqqımızda</a></li>
+        <li><a href="#">Catdırılma</a></li>
+        <li><a href="#">Geri qaytarılma və dəyişdirilmə</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-sm-12 footer-list">
+      <ul>
+        <li class="footer-list-top">Əlaqə</li>
+        <li>Tel: (+994) 99 832 07 77</li>
+        <li>E-mailI info@los.aZ</li>
+        <li>Ünvan: Ziya Bünyadov pr.1965 Çinar Park Biznes Mərkəzi</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <span class="copyright">Copyright</span>
+  <a href="#" class="position-absolute  icon-top-right p-1">
+    <i class="fa-solid fa-circle-arrow-up icon-top"></i>
+   </a>
+  </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"> 
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+

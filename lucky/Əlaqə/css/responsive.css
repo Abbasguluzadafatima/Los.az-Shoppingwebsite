@@ -1,0 +1,68 @@
+@media (max-width: 200px) { 
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+  
+} 
+@media (max-width: 320px) { 
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+}
+@media (max-width: 310px) { 
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+ 
+}
+@media (max-width: 420px) { 
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+}
+
+@media (max-width: 576px) { 
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 600px) {
+  .connect-map{
+    width: 280px;
+    height:200px
+  }
+   
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .connect-map{
+      width: 280px;
+      height:200px
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    .connect-map{
+      width: 280px;
+      height:200px
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {
+    
+  }
+  @media only screen and (max-width: 1400px) {
+    .about-img-top{
+      display: none;
+  }
+  }

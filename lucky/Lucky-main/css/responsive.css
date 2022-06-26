@@ -1,0 +1,84 @@
+@media (max-width: 200px) { 
+ 
+  .category-img1{
+    width: 200px;
+   }
+} 
+@media (max-width: 320px) { 
+  .category-img1{
+    width: 200px;
+   }
+ 
+}
+@media (max-width: 310px) { 
+ 
+  .category-img1{
+    width: 200px;
+   }
+}
+@media (max-width: 420px) { 
+ 
+  .category-img1{
+    width: 200px;
+   }
+}
+
+@media (max-width: 576px) { 
+  .category-img1{
+    width: 200px;
+   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 600px) {
+   .header-img{
+       display: none;
+   }
+   .category-img1{
+    width: 300px;
+   }
+   .green-link{
+    font-size: 5px;
+   z-index: 1;
+   }
+   
+   
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .header-img{
+        display: none;
+    }
+    .category-img{
+      width: 300px;
+     }
+     .category-img1{
+      width: 300px;
+     }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+  .bg-imgLeft{
+    display: none;
+  }
+  .bg-imgRight{
+    display: none;
+  }
+  .slider{
+   display: none;   
+  }
+  .category-imgLeft{
+    display: none;
+  }
+    
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {
+    
+  }
+  @media only screen and (max-width: 1400px) {
+
+  }
